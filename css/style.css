@@ -1,0 +1,104 @@
+
+body{
+    background-image: url("../image/image.png") !important;
+    background-repeat: repeat !important;
+    background-position: center !important;
+}
+
+.Games-store h1{
+    width:fit-content ;
+}
+.form-control , .form-control {
+    border-width: 3px !important;
+    border-color: rgba(174, 189, 197, 0.405) !important;
+}
+
+.form-control:focus , .form-control:focus{
+    box-shadow: none;
+   border-color: #9677dc !important;
+}
+
+.cartona{
+    transition: 0.6s ;
+}
+.cartona:active{
+    transform: scale(1.07);
+    box-shadow: 10px 0px 15px rgba(247, 244, 244, 0.79);
+}
+
+/*Text under game images */
+.cartona .card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cartona .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.cartona .card-body h4 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* image borders */
+.cartona .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #9677dc;
+    border-radius: 6px;
+}
+
+/* Equal card heights */
+.cartona .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartona .card-body {
+    flex: 1;
+}
+
+/* Organize game information */
+.cartona .card-body {
+    padding: 15px;
+}
+
+.cartona .card-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #070707;
+}
+
+.cartona .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+    margin-bottom: 15px;
+}
+
+.cartona .card-body h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 8px;
+    background-color: rgba(125, 161, 168, 0.08);
+    border-radius: 6px;
+}
+
+.cartona .card-body h4 + h4 {
+    margin-top: 8px;
+}
+
+#categoryError {
+    color: #9B7AE8;
+    background-color: rgba(155, 122, 232, 0.12);
+    border: 1px solid #9B7AE8;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}

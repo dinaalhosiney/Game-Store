@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="Games-store w-75 mx-auto">
+      <h1 class="mx-auto mt-5 shadow-lg p-2 rounded text-white-50">
+        <span class="text-info">G</span>AMES
+        <span class="text-info">S</span>TORE
+      </h1>
+
+      <div class="content mt-4">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control border-0 border-bottom"
+            id="productName"
+            placeholder="Product Name"
+          />
+          <label for="productName">Game Name</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <input
+            type="number"
+            class="form-control border-0 border-bottom"
+            id="productPrice"
+            placeholder="Product Price"
+          />
+          <label for="productPrice">Game Price</label>
+        </div>
+
+        <select class="form-control mt-3 border-0 border-bottom" id="productCategory">
+          <option class="choose"  selected disabled hidden>
+            Select Game Category
+          </option>
+          <option value="Sports">Sports</option>
+          <option value="Actions">Actions</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Racing">Racing</option>
+        </select>
+
+        <div class="form-floating mt-3">
+          <textarea
+            class="form-control border-0 border-bottom"
+            placeholder="Product Description"
+            id="productDescription"
+          ></textarea>
+          <label for="productDescription">Game Description</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <input
+            type="file"
+            class="form-control border-0 border-bottom"
+            id="productImage"
+            placeholder="Product Image"
+          />
+          <label for="productImage">Game Image</label>
+        </div>
+
+        <button class="btn  text-light mt-4" style="background-color: #0dcaf0; border-color: #6c757d;" id = "addBtn" onclick="addProduct()">Add Product</button>
+       <button class="btn  text-light mt-4 d-none" style="background-color: #6c757d; border-color: #6c757d;"id = "updateBtn" onclick="updateProduct()">Update Product</button>
+
+      </div>
+    </section>
+
+     <div class="search ">
+          <input
+            type="search"
+            class="form-control w-50 mx-auto mt-5 p-2"
+            id="searchProductName"
+            placeholder="Enter Game Name"
+            oninput="searchProduct(this)" 
+          />
+     </div>
+
+
+    <section class="cards">
+      <div class="container">
+        <div class="row" id = "rowData">
+          
+        </div>
+      </div>
+    </section>
+    
+   
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
