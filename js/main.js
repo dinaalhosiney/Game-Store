@@ -16,7 +16,7 @@ var productList = [];
 
 var updateIndex ;
 
-if(localStorage.getItem("products")){ 
+if(localStorage.getItem("products") !== null){ 
     productList = JSON.parse(localStorage.getItem("products")) ;
 
     display(productList);
